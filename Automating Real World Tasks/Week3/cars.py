@@ -92,7 +92,7 @@ def main(argv):
   message = emails.generate(sender, receiver, subject, body, attachment_path)
 
   # Send Email
-  #emails.send(message)
+  emails.send(message)
 
 if __name__ == "__main__":
   main(sys.argv)
