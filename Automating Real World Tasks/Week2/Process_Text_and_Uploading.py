@@ -15,5 +15,5 @@ for file in txt_file:
         feedback['name'] = lines[1]
         feedback['date'] = lines[2]
         feedback['feedback'] = lines[3]
-
+        # Enter your VM instance IP 
         response = requests.post("http://<corpweb-external-IP>/feedback", data = feedback)
